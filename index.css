@@ -1,14 +1,15 @@
 .card {
-  background-color: gray;
-  border: 1px solid black;
-  border-radius: 20px;
+  background-color: #f3f3f3;
+  border: 1px solid #ffddae;
+  border-radius: 8px;
   padding: 16px;
   margin: 20px;
   cursor: pointer;
+  box-shadow: 2px -1px 5px #d3ebf1;
 }
 section {
-  background-color: rgb(255, 239, 224);
-  border: 1px solid black;
+  background-color: #fbfbfb;
+  border: 1px solid #ffddae;
   margin: 16px 8px;
   border-radius: 10px;
   flex: 1;
@@ -24,7 +25,7 @@ form {
   background-color: rgb(230, 232, 249);
   padding: 16px;
   margin: 16px;
-  box-shadow: 0px 0px 10px rgb(119, 119, 119);
+  box-shadow: 1px 1px 5px #ffddae;
   border-radius: 16px;
   display: none;
   margin: 0;
@@ -62,36 +63,37 @@ textarea {
   width: 350px;
 }
 .createTaskContainer {
-  background-color: rgb(221, 249, 217);
-  padding: 10px;
+  background-color: #c6e7ff;
+  padding: 10px 20px;
   border-radius: 8px;
-  width: 80px;
-  color: rgb(0, 55, 0);
+  display: inline-block;
+  color: #0e0f10;
   font-weight: 600;
   font-size: 13px;
-  border: 2px solid rgb(2, 91, 2);
+  border: 1px solid #ffddae;
   cursor: pointer;
   margin: 40px 0 0 8px;
+  box-shadow: 1px 1px 3px #c6e7ff;
 }
 .createTaskContainer:hover {
   opacity: 0.9;
-  background-color: rgb(153, 251, 138);
+  background-color: #d3e8f7;
 }
 h3 {
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ffddae;
   padding-bottom: 8px;
 }
 
 .Add {
-  background-color: rgb(221, 249, 217);
+  background-color: #c6e7ff;
   padding: 10px;
   border-radius: 8px;
   width: 80px;
-  color: rgb(0, 55, 0);
+  color: #0e0f10;
   font-weight: 600;
   font-size: 13px;
-  border: 2px solid rgb(2, 91, 2);
+  border: 2px solid #ffddae;
   cursor: pointer;
   margin: 40px 0 0 8px;
 }
@@ -100,7 +102,7 @@ h5,
 p {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #0e0f10;
 }
 p {
   font-size: 11px;
@@ -117,4 +119,16 @@ h4 {
   font-weight: 600;
   text-align: center;
   padding-bottom: 8px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.text {
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  padding: 8px;
+  cursor: pointer;
 }

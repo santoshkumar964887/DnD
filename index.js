@@ -2,6 +2,13 @@ const sections = document.querySelectorAll('section');
 const createTaskButton = document.querySelector('.createTaskContainer');
 const form = document.querySelector('form');
 const Add = document.querySelector('.Add');
+const close = document.getElementById('close');
+
+close.addEventListener('click', (e) => {
+  e.preventDefault();
+  form.style.display = 'none';
+});
+
 // already created card logic start
 let jsonData = sessionStorage.getItem('data');
 if (jsonData) {
@@ -14,9 +21,9 @@ if (jsonData) {
 // already created card logic end
 // open modal logic start
 createTaskButton.addEventListener('click', () => {
-  console.log(form.style.display);
   form.style.display = 'inline-block';
 });
+
 // open modal logic end
 //on submit form logic start
 form.addEventListener('submit', (e) => {
