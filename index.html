@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="'en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DnD</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- start modal logic here -->
+    <form>
+      <input type="text" placeholder="Enter task name" id="name" />
+      <br />
+      <br />
+      <input type="radio" name="type" id="API" value="API" />
+      <label for="API"> API</label>
+      <input type="radio" name="type" id="UI" value="UI" />
+      <label for="UI"> UI</label>
+
+      <br />
+      <br />
+      <textarea
+        name=""
+        placeholder="Enter detail description"
+        id="desc"
+      ></textarea>
+      <br />
+      <input type="submit" value="Submit" class="Add" />
+    </form>
+    <!-- end modal logic here -->
+    <!-- start create task button logic -->
+    <div class="createTaskContainer">Create Task +</div>
+    <!-- end create task button logic -->
+    <!-- start task status logic -->
+    <div class="outerContainer">
+      <section class="section1" status="inQu">
+        <h3>In Queue</h3>
+      </section>
+      <section class="section2" status="inDev">
+        <h3>In Development</h3>
+      </section>
+      <section class="section2" status="inDevDone">
+        <h3>Deployed</h3>
+      </section>
+    </div>
+    <!-- end task status logic -->
+    <script src="./index.js"></script>
+  </body>
+</html>
